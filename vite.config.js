@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NETLIFY ? "/" : "/react-fruit-store/", // ✅ Auto-detects platform
+  base: "/", // ✅ Fixed for Vercel deployment
   server: {
     port: 3000,
   },
